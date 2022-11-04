@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Payment Calculator</h1>
+        <div class="control">
+            <label for="amount">Loan Amount</label>
+            <input type="number" id="amount" placeholder="Enter Amount">
+        </div>
+        <div class="control">
+            <label for="interest">Interest</label>
+            <input type="number" id="interest" placeholder="Enter Interest">
+        </div>
+        <div class="control">
+            <label for="years">Loan Term</label>
+            <input type="number" id="years" placeholder="Enter years">
+        </div>
+        <div>
+            <p id="result"></p>
+        </div>
+        <button class="btn-calculate" id="calculate">Calculate</button>
+        <button class="btn-clear" id="clear">Clear</button>
+        <script src="index.js"></script>
+</body>
+
+</html>
