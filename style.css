@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --primary-color: #10a37f;
+    --secondary-color: #ececf1;
+    --border-color: #ccc;
+    --margin: 10px;
+    --padding: 10px;
+    --max-width: 1200px;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 249, 249);
+}
+
+h1 {
+    text-align: center;
+}
+
+th:nth-child(1), .results-tr:nth-child(1) {
+    padding-right: var(--padding);
+    border-right: var(--border-color) 1px solid;
+}
+
+th:nth-child(3), .results-tr:nth-child(3){
+    padding-left: var(--padding);
+    border-left: var(--border-color) 1px solid;
+}
+
 input {
     border: 0;
     outline: 0;
@@ -17,12 +52,87 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+.flex {
+    display: flex;
+    justify-content: end;
+}
+.center {
+    width: 75%;
+    margin: 0 auto;
+}
+.max-width {
+    max-width: var(--max-width);
+}
+.margin-top {
+    margin-top: var(--margin);
+}
+.padding-right {
+    padding-right: var(--padding);
+}
+.container {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 300px;
+    border: solid var(--border-color) 1px;
+    padding: var(--padding);
+    box-shadow: 0 0 10px var(--border-color);
+}
+
+.btn-primary {
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding);
+    margin-bottom: var(--margin);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.btn-secondary {
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: #353740;
+    padding: var(--padding);
+    margin-bottom: var(--margin);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 0 10px var(--border-color);
+}
+
 #amount,
 #interest,
 #years {
     width: auto;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: var(--padding);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: var(--margin);
+}
+
+@media only screen and (max-width: 650px) {
+    .margin-top {
+        margin-top: 0;
+    }
+    .center {
+        width: 100%;
+    }
+    .container {
+        min-width: 100%;
+    } 
+    table {
+        margin: auto;
+    }
 }

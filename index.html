@@ -10,27 +10,55 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <h1>Payment Calculator</h1>
-        <div class="control">
-            <label for="amount">Loan Amount</label>
-            <input type="number" id="amount" placeholder="Enter Amount">
+    <section class="center max-width margin-top">
+        <div class="container">
+            <h1>Payment Calculator</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Loan Amount</td>
+                        <td><input type="number" id="amount" placeholder="Enter Amount" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Interest Rate</td>
+                        <td><input type="number" id="interest" placeholder="Enter Interest" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Loan Term</td>
+                        <td><input type="number" id="years" placeholder="Enter years" value="" ></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="right">
+                            <button class="btn-primary btn-calculate" id="calculate">Calculate</button>
+                            <button class="btn-secondary btn-clear" id="clear">Clear</button>
+                        </td>   
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="control">
-            <label for="interest">Interest</label>
-            <input type="number" id="interest" placeholder="Enter Interest">
+    </section>
+    <section class="margin-top">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Monthly Payment</th>
+                        <th>Total Payment</th>
+                        <th>Total Interest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="results-tr">
+                        <td align="center" class=results></td>
+                        <td align="center" class=results></td>
+                        <td align="center" class=results></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="control">
-            <label for="years">Loan Term</label>
-            <input type="number" id="years" placeholder="Enter years">
-        </div>
-        <div>
-            <p id="result"></p>
-        </div>
-        <button class="btn-calculate" id="calculate">Calculate</button>
-        <button class="btn-clear" id="clear">Clear</button>
-        <script src="index.js"></script>
+    </section>
+<script src="index.js"></script>
 </body>
 
 </html>
