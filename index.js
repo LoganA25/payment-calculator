@@ -27,12 +27,11 @@ button.addEventListener("click", function () {
     //calculating the total payment
     const totalPayment = (monthly * calculatedPayments).toFixed(2);
 
-    result.innerHTML = `
-    <p>Monthly Payment: $${monthlyPayment}</p>
-    <p>Total Interest: $${totalInterest}</p>
-    <p>Total Payment: $${totalPayment}</p>
+    result.innerHTML = ` 
+        <p>Monthly Payment: <span class="result">${addCommas(monthlyPayment)}</span></p>
+        <p>Total Interest: <span class="result">${addCommas(totalInterest)}</span></p>
+        <p>Total Payment: <span class="result">${addCommas(totalPayment)}</span></p>
     `;
-
 });
 
 function addCommas(x) {
