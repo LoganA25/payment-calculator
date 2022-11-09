@@ -43,3 +43,16 @@ clear.addEventListener("click", function () {
 	years.value = "";
 	results.forEach((item) => (item.innerHTML = ""));
 });
+
+//theme
+const theme = document.querySelector(".theme");
+const checkBox = document.querySelector(".switchBox");
+const html = document.querySelector("html");
+
+checkBox.addEventListener("click", function (e) {
+	if (this.checked != true) {
+		html.setAttribute("data-theme", "dark");
+	} else {
+		html.setAttribute("data-theme", "light");
+	}
+});
