@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="flex_center">
     <section class="center max-width margin-top">
-        <div class="container">
+        <div class="container position_relative">
+            <label class="theme">
+                <input class="switchBox switch" type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
             <h1>Payment Calculator</h1>
             <table>
                 <tbody>
@@ -25,7 +29,7 @@
                     </tr>
                     <tr>
                         <td>Loan Term</td>
-                        <td><input type="number" id="years" placeholder="Enter years" value="" ></td>
+                        <td><input type="number" id="years" placeholder="Enter Years" value="" ></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -59,6 +63,7 @@
         </div>
     </section>
 <script src="index.js"></script>
+
 </body>
 
 </html>
