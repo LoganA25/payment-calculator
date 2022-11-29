@@ -37,12 +37,14 @@ h1 {
     text-align: center;
 }
 
-th:nth-child(1), .results-tr:nth-child(1) {
+th:nth-child(1),
+.results-tr:nth-child(1) {
     padding-right: var(--padding);
     border-right: var(--border-color) 1px solid;
 }
 
-th:nth-child(3), .results-tr:nth-child(3){
+th:nth-child(3),
+.results-tr:nth-child(3) {
     padding-left: var(--padding);
     border-left: var(--border-color) 1px solid;
 }
@@ -110,22 +112,35 @@ input[type=number] {
     width: 75%;
     margin: 0 auto;
 }
+
 .max-width {
     max-width: var(--max-width);
 }
+
 .margin-top {
     margin-top: var(--margin);
 }
+
 .padding-right {
     padding-right: var(--padding);
 }
+
+.information {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 300px;
+    border: solid var(--border-color) 1px;
+    padding: var(--padding);
+    border-radius: 10px;
+}
+
 .container {
     margin: 0 auto;
     min-width: 300px;
     max-width: 300px;
     border: solid var(--border-color) 1px;
     padding: var(--padding);
-    box-shadow: 0 0 10px var(--border-color);
+    border-radius: 10px;
 }
 
 .btn-primary {
@@ -163,64 +178,66 @@ input[type=number] {
 }
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 34px;
-  height: 20px;
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 17px;
 }
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--primary-color);
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: var(--primary-color);
+input:checked+.slider {
+    background-color: var(--primary-color);
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--primary-color);
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--primary-color);
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 16px;
+    border-radius: 16px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
+
 #amount,
 #interest,
 #years {
@@ -235,12 +252,15 @@ input:checked + .slider:before {
     .margin-top {
         margin-top: 0;
     }
+
     .center {
         width: 100%;
     }
+
     .container {
         min-width: 100%;
-    } 
+    }
+
     table {
         margin: auto;
     }
