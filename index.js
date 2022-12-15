@@ -56,6 +56,3 @@ checkBox.addEventListener("click", function (e) {
 		html.setAttribute("data-theme", "light");
 	}
 });
-
-alert("from justin's branch");
-alert('hello')
