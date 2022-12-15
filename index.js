@@ -56,4 +56,3 @@ checkBox.addEventListener("click", function (e) {
 		html.setAttribute("data-theme", "light");
 	}
 });
-
