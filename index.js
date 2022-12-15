@@ -57,4 +57,4 @@ checkBox.addEventListener("click", function (e) {
 	}
 });
 
-alert('hello guests');
+alert("hello mate!");
