@@ -257,10 +257,6 @@ input:checked+.slider:before {
         width: 100%;
     }
 
-    .container {
-        min-width: 100%;
-    }
-
     table {
         margin: auto;
     }
